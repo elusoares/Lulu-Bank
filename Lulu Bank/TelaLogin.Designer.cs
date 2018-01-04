@@ -38,8 +38,8 @@
             this.pictureBoxDinheiro = new System.Windows.Forms.PictureBox();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.labelNaoTemUmaConta = new System.Windows.Forms.Label();
             this.linkLabelCadastreSe = new System.Windows.Forms.LinkLabel();
+            this.labelNaoTemUmaConta = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).BeginInit();
             this.panel2.SuspendLayout();
@@ -124,7 +124,7 @@
             // 
             this.pictureBoxDinheiro.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxDinheiro.Image = global::Lulu_Bank.Properties.Resources.dinheiro1;
-            this.pictureBoxDinheiro.Location = new System.Drawing.Point(156, 68);
+            this.pictureBoxDinheiro.Location = new System.Drawing.Point(156, 12);
             this.pictureBoxDinheiro.Name = "pictureBoxDinheiro";
             this.pictureBoxDinheiro.Size = new System.Drawing.Size(75, 60);
             this.pictureBoxDinheiro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +137,7 @@
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTitle.Location = new System.Drawing.Point(123, 26);
+            this.labelTitle.Location = new System.Drawing.Point(117, 75);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(157, 39);
             this.labelTitle.TabIndex = 7;
@@ -153,16 +153,6 @@
             this.panel2.Size = new System.Drawing.Size(249, 37);
             this.panel2.TabIndex = 8;
             // 
-            // labelNaoTemUmaConta
-            // 
-            this.labelNaoTemUmaConta.AutoSize = true;
-            this.labelNaoTemUmaConta.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelNaoTemUmaConta.Location = new System.Drawing.Point(41, 11);
-            this.labelNaoTemUmaConta.Name = "labelNaoTemUmaConta";
-            this.labelNaoTemUmaConta.Size = new System.Drawing.Size(106, 13);
-            this.labelNaoTemUmaConta.TabIndex = 0;
-            this.labelNaoTemUmaConta.Text = "Não tem uma conta?";
-            // 
             // linkLabelCadastreSe
             // 
             this.linkLabelCadastreSe.AutoSize = true;
@@ -173,6 +163,16 @@
             this.linkLabelCadastreSe.TabIndex = 1;
             this.linkLabelCadastreSe.TabStop = true;
             this.linkLabelCadastreSe.Text = "Cadastre-se";
+            // 
+            // labelNaoTemUmaConta
+            // 
+            this.labelNaoTemUmaConta.AutoSize = true;
+            this.labelNaoTemUmaConta.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelNaoTemUmaConta.Location = new System.Drawing.Point(41, 11);
+            this.labelNaoTemUmaConta.Name = "labelNaoTemUmaConta";
+            this.labelNaoTemUmaConta.Size = new System.Drawing.Size(106, 13);
+            this.labelNaoTemUmaConta.TabIndex = 0;
+            this.labelNaoTemUmaConta.Text = "Não tem uma conta?";
             // 
             // TelaLogin
             // 
