@@ -35,14 +35,14 @@
             this.buttonLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBoxDinheiro = new System.Windows.Forms.PictureBox();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.linkLabelCadastreSe = new System.Windows.Forms.LinkLabel();
             this.labelNaoTemUmaConta = new System.Windows.Forms.Label();
+            this.pictureBoxDinheiro = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxUsuario
@@ -120,24 +120,12 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Bem vindo(a)";
             // 
-            // pictureBoxDinheiro
-            // 
-            this.pictureBoxDinheiro.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxDinheiro.Image = global::Lulu_Bank.Properties.Resources.dinheiro1;
-            this.pictureBoxDinheiro.Location = new System.Drawing.Point(156, 12);
-            this.pictureBoxDinheiro.Name = "pictureBoxDinheiro";
-            this.pictureBoxDinheiro.Size = new System.Drawing.Size(75, 60);
-            this.pictureBoxDinheiro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxDinheiro.TabIndex = 6;
-            this.pictureBoxDinheiro.TabStop = false;
-            this.pictureBoxDinheiro.Click += new System.EventHandler(this.pictureBoxDinheiro_Click);
-            // 
             // labelTitle
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Palatino Linotype", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTitle.Location = new System.Drawing.Point(117, 75);
+            this.labelTitle.Location = new System.Drawing.Point(117, 89);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(157, 39);
             this.labelTitle.TabIndex = 7;
@@ -174,6 +162,18 @@
             this.labelNaoTemUmaConta.TabIndex = 0;
             this.labelNaoTemUmaConta.Text = "Não tem uma conta?";
             // 
+            // pictureBoxDinheiro
+            // 
+            this.pictureBoxDinheiro.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxDinheiro.Image = global::Lulu_Bank.Properties.Resources.dinheiro1;
+            this.pictureBoxDinheiro.Location = new System.Drawing.Point(156, 26);
+            this.pictureBoxDinheiro.Name = "pictureBoxDinheiro";
+            this.pictureBoxDinheiro.Size = new System.Drawing.Size(75, 60);
+            this.pictureBoxDinheiro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxDinheiro.TabIndex = 6;
+            this.pictureBoxDinheiro.TabStop = false;
+            this.pictureBoxDinheiro.Click += new System.EventHandler(this.pictureBoxDinheiro_Click);
+            // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -188,9 +188,9 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
