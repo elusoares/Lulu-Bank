@@ -38,5 +38,10 @@ namespace Lulu_Bank
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

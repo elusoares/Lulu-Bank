@@ -30,46 +30,50 @@
         {
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
-            this.labelUsuario = new System.Windows.Forms.Label();
+            this.labelCpf = new System.Windows.Forms.Label();
             this.labelSenha = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxDinheiro = new System.Windows.Forms.PictureBox();
             this.labelTitle = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.labelNaoTemUmaConta = new System.Windows.Forms.Label();
+            this.linkLabelCadastreSe = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxUsuario
             // 
-            this.textBoxUsuario.Location = new System.Drawing.Point(72, 50);
+            this.textBoxUsuario.Location = new System.Drawing.Point(69, 50);
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(163, 20);
             this.textBoxUsuario.TabIndex = 0;
             // 
             // textBoxSenha
             // 
-            this.textBoxSenha.Location = new System.Drawing.Point(72, 84);
+            this.textBoxSenha.Location = new System.Drawing.Point(69, 84);
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.Size = new System.Drawing.Size(163, 20);
             this.textBoxSenha.TabIndex = 1;
             // 
-            // labelUsuario
+            // labelCpf
             // 
-            this.labelUsuario.AutoSize = true;
-            this.labelUsuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelUsuario.Location = new System.Drawing.Point(17, 53);
-            this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(46, 13);
-            this.labelUsuario.TabIndex = 2;
-            this.labelUsuario.Text = "Usuário:";
+            this.labelCpf.AutoSize = true;
+            this.labelCpf.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelCpf.Location = new System.Drawing.Point(32, 53);
+            this.labelCpf.Name = "labelCpf";
+            this.labelCpf.Size = new System.Drawing.Size(30, 13);
+            this.labelCpf.TabIndex = 2;
+            this.labelCpf.Text = "CPF:";
             // 
             // labelSenha
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelSenha.Location = new System.Drawing.Point(17, 87);
+            this.labelSenha.Location = new System.Drawing.Point(20, 87);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(41, 13);
             this.labelSenha.TabIndex = 3;
@@ -96,13 +100,14 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textBoxUsuario);
             this.panel1.Controls.Add(this.buttonLogin);
-            this.panel1.Controls.Add(this.labelUsuario);
+            this.panel1.Controls.Add(this.labelCpf);
             this.panel1.Controls.Add(this.labelSenha);
             this.panel1.Controls.Add(this.textBoxSenha);
             this.panel1.Location = new System.Drawing.Point(68, 188);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 185);
             this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -138,12 +143,44 @@
             this.labelTitle.TabIndex = 7;
             this.labelTitle.Text = "Lulu Bank";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(90)))), ((int)(((byte)(100)))));
+            this.panel2.Controls.Add(this.linkLabelCadastreSe);
+            this.panel2.Controls.Add(this.labelNaoTemUmaConta);
+            this.panel2.Location = new System.Drawing.Point(68, 404);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(249, 37);
+            this.panel2.TabIndex = 8;
+            // 
+            // labelNaoTemUmaConta
+            // 
+            this.labelNaoTemUmaConta.AutoSize = true;
+            this.labelNaoTemUmaConta.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelNaoTemUmaConta.Location = new System.Drawing.Point(41, 11);
+            this.labelNaoTemUmaConta.Name = "labelNaoTemUmaConta";
+            this.labelNaoTemUmaConta.Size = new System.Drawing.Size(106, 13);
+            this.labelNaoTemUmaConta.TabIndex = 0;
+            this.labelNaoTemUmaConta.Text = "Não tem uma conta?";
+            // 
+            // linkLabelCadastreSe
+            // 
+            this.linkLabelCadastreSe.AutoSize = true;
+            this.linkLabelCadastreSe.LinkColor = System.Drawing.Color.White;
+            this.linkLabelCadastreSe.Location = new System.Drawing.Point(143, 11);
+            this.linkLabelCadastreSe.Name = "linkLabelCadastreSe";
+            this.linkLabelCadastreSe.Size = new System.Drawing.Size(63, 13);
+            this.linkLabelCadastreSe.TabIndex = 1;
+            this.linkLabelCadastreSe.TabStop = true;
+            this.linkLabelCadastreSe.Text = "Cadastre-se";
+            // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(385, 415);
+            this.ClientSize = new System.Drawing.Size(385, 488);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.pictureBoxDinheiro);
             this.Controls.Add(this.panel1);
@@ -152,6 +189,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,13 +200,16 @@
 
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.TextBox textBoxSenha;
-        private System.Windows.Forms.Label labelUsuario;
+        private System.Windows.Forms.Label labelCpf;
         private System.Windows.Forms.Label labelSenha;
         public System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBoxDinheiro;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.LinkLabel linkLabelCadastreSe;
+        private System.Windows.Forms.Label labelNaoTemUmaConta;
     }
 }
 
