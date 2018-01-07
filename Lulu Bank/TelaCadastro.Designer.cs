@@ -44,6 +44,12 @@
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.pictureBoxDinheiro = new System.Windows.Forms.PictureBox();
             this.labelTitle = new System.Windows.Forms.Label();
+            this.textBoxSenha = new System.Windows.Forms.TextBox();
+            this.labelSenha = new System.Windows.Forms.Label();
+            this.textBoxConfirmaEmail = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).BeginInit();
             this.SuspendLayout();
@@ -51,6 +57,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.labelEmail);
+            this.panel1.Controls.Add(this.textBoxEmail);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textBoxConfirmaEmail);
+            this.panel1.Controls.Add(this.labelSenha);
+            this.panel1.Controls.Add(this.textBoxSenha);
             this.panel1.Controls.Add(this.buttonCancelar);
             this.panel1.Controls.Add(this.buttonSalvar);
             this.panel1.Controls.Add(this.labelNovoUsuario);
@@ -66,16 +78,17 @@
             this.panel1.Controls.Add(this.textBoxNome);
             this.panel1.Location = new System.Drawing.Point(128, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(352, 344);
+            this.panel1.Size = new System.Drawing.Size(496, 344);
             this.panel1.TabIndex = 0;
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.BackColor = System.Drawing.Color.Red;
+            this.buttonCancelar.FlatAppearance.BorderSize = 0;
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancelar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonCancelar.Location = new System.Drawing.Point(183, 282);
+            this.buttonCancelar.Location = new System.Drawing.Point(252, 294);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(86, 23);
             this.buttonCancelar.TabIndex = 16;
@@ -89,7 +102,7 @@
             this.buttonSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSalvar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonSalvar.Location = new System.Drawing.Point(82, 282);
+            this.buttonSalvar.Location = new System.Drawing.Point(151, 294);
             this.buttonSalvar.Name = "buttonSalvar";
             this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
             this.buttonSalvar.TabIndex = 15;
@@ -111,7 +124,7 @@
             // 
             this.labelTel.AutoSize = true;
             this.labelTel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTel.Location = new System.Drawing.Point(215, 195);
+            this.labelTel.Location = new System.Drawing.Point(67, 187);
             this.labelTel.Name = "labelTel";
             this.labelTel.Size = new System.Drawing.Size(28, 13);
             this.labelTel.TabIndex = 13;
@@ -119,7 +132,7 @@
             // 
             // maskedTextBoxTel
             // 
-            this.maskedTextBoxTel.Location = new System.Drawing.Point(249, 192);
+            this.maskedTextBoxTel.Location = new System.Drawing.Point(101, 184);
             this.maskedTextBoxTel.Mask = "(99) 00000-0000";
             this.maskedTextBoxTel.Name = "maskedTextBoxTel";
             this.maskedTextBoxTel.Size = new System.Drawing.Size(80, 20);
@@ -129,7 +142,7 @@
             // 
             this.labelGenero.AutoSize = true;
             this.labelGenero.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelGenero.Location = new System.Drawing.Point(50, 195);
+            this.labelGenero.Location = new System.Drawing.Point(259, 135);
             this.labelGenero.Name = "labelGenero";
             this.labelGenero.Size = new System.Drawing.Size(45, 13);
             this.labelGenero.TabIndex = 11;
@@ -139,7 +152,7 @@
             // 
             this.labelNasc.AutoSize = true;
             this.labelNasc.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelNasc.Location = new System.Drawing.Point(20, 142);
+            this.labelNasc.Location = new System.Drawing.Point(299, 89);
             this.labelNasc.Name = "labelNasc";
             this.labelNasc.Size = new System.Drawing.Size(79, 13);
             this.labelNasc.TabIndex = 10;
@@ -149,7 +162,7 @@
             // 
             this.labelCpf.AutoSize = true;
             this.labelCpf.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelCpf.Location = new System.Drawing.Point(213, 142);
+            this.labelCpf.Location = new System.Drawing.Point(65, 135);
             this.labelCpf.Name = "labelCpf";
             this.labelCpf.Size = new System.Drawing.Size(30, 13);
             this.labelCpf.TabIndex = 9;
@@ -168,7 +181,7 @@
             // 
             // maskedTextBoxCpf
             // 
-            this.maskedTextBoxCpf.Location = new System.Drawing.Point(249, 139);
+            this.maskedTextBoxCpf.Location = new System.Drawing.Point(101, 132);
             this.maskedTextBoxCpf.Mask = "000.000.000-00";
             this.maskedTextBoxCpf.Name = "maskedTextBoxCpf";
             this.maskedTextBoxCpf.Size = new System.Drawing.Size(80, 20);
@@ -181,14 +194,14 @@
             "Feminino",
             "Masculino",
             "Outro"});
-            this.comboBoxGenero.Location = new System.Drawing.Point(101, 192);
+            this.comboBoxGenero.Location = new System.Drawing.Point(310, 132);
             this.comboBoxGenero.Name = "comboBoxGenero";
             this.comboBoxGenero.Size = new System.Drawing.Size(94, 21);
             this.comboBoxGenero.TabIndex = 6;
             // 
             // maskedTextBoxNasc
             // 
-            this.maskedTextBoxNasc.Location = new System.Drawing.Point(101, 139);
+            this.maskedTextBoxNasc.Location = new System.Drawing.Point(380, 86);
             this.maskedTextBoxNasc.Mask = "00/00/0000";
             this.maskedTextBoxNasc.Name = "maskedTextBoxNasc";
             this.maskedTextBoxNasc.Size = new System.Drawing.Size(94, 20);
@@ -199,7 +212,7 @@
             // 
             this.textBoxNome.Location = new System.Drawing.Point(101, 86);
             this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(228, 20);
+            this.textBoxNome.Size = new System.Drawing.Size(184, 20);
             this.textBoxNome.TabIndex = 1;
             // 
             // pictureBoxDinheiro
@@ -223,15 +236,67 @@
             this.labelTitle.TabIndex = 8;
             this.labelTitle.Text = "Lulu Bank";
             // 
+            // textBoxSenha
+            // 
+            this.textBoxSenha.Location = new System.Drawing.Point(101, 238);
+            this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.Size = new System.Drawing.Size(94, 20);
+            this.textBoxSenha.TabIndex = 18;
+            // 
+            // labelSenha
+            // 
+            this.labelSenha.AutoSize = true;
+            this.labelSenha.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelSenha.Location = new System.Drawing.Point(50, 241);
+            this.labelSenha.Name = "labelSenha";
+            this.labelSenha.Size = new System.Drawing.Size(41, 13);
+            this.labelSenha.TabIndex = 19;
+            this.labelSenha.Text = "Senha:";
+            // 
+            // textBoxConfirmaEmail
+            // 
+            this.textBoxConfirmaEmail.Location = new System.Drawing.Point(310, 238);
+            this.textBoxConfirmaEmail.Name = "textBoxConfirmaEmail";
+            this.textBoxConfirmaEmail.Size = new System.Drawing.Size(94, 20);
+            this.textBoxConfirmaEmail.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(222, 241);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(82, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Repita a senha:";
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelEmail.Location = new System.Drawing.Point(259, 187);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(38, 13);
+            this.labelEmail.TabIndex = 23;
+            this.labelEmail.Text = "E-mail:";
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(310, 184);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(164, 20);
+            this.textBoxEmail.TabIndex = 22;
+            // 
             // TelaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(520, 405);
+            this.ClientSize = new System.Drawing.Size(650, 405);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.pictureBoxDinheiro);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "TelaCadastro";
             this.Text = "TelaCadastro";
             this.panel1.ResumeLayout(false);
@@ -260,5 +325,11 @@
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Label labelNovoUsuario;
         private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxConfirmaEmail;
+        private System.Windows.Forms.Label labelSenha;
+        private System.Windows.Forms.TextBox textBoxSenha;
     }
 }

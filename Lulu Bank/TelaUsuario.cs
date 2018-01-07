@@ -29,14 +29,7 @@ namespace Lulu_Bank
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
-            //if (e.Row == 1)
-            //    e.Graphics.FillRectangle(Brushes.AliceBlue, e.CellBounds);
-            //if (e.Row == 2)
-            //    e.Graphics.FillRectangle(Brushes.Aqua, e.CellBounds);
-            //if (e.Row == 3)
-            //    e.Graphics.FillRectangle(Brushes.Aquamarine, e.CellBounds);
-            //if (e.Row == 4)
-            //    e.Graphics.FillRectangle(Brushes.Azure, e.CellBounds);
+           
 
 
         }

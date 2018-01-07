@@ -47,7 +47,13 @@
             this.labelAgencia = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.pictureBoxDinheiro = new System.Windows.Forms.PictureBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonDepósito = new System.Windows.Forms.Button();
+            this.buttonSaque = new System.Windows.Forms.Button();
+            this.buttonTransferencia = new System.Windows.Forms.Button();
+            this.buttonPagamentos = new System.Windows.Forms.Button();
+            this.labelSaldo = new System.Windows.Forms.Label();
+            this.labelExibeSaldo = new System.Windows.Forms.Label();
+            this.buttonExtrato = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +61,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.labelExibeSaldo);
+            this.panel1.Controls.Add(this.labelSaldo);
             this.panel1.Controls.Add(this.labelExibeTel);
             this.panel1.Controls.Add(this.labelExibeGenero);
             this.panel1.Controls.Add(this.labelExibeCpf);
@@ -81,7 +89,7 @@
             // 
             this.labelExibeTel.AutoSize = true;
             this.labelExibeTel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelExibeTel.Location = new System.Drawing.Point(247, 224);
+            this.labelExibeTel.Location = new System.Drawing.Point(247, 266);
             this.labelExibeTel.Name = "labelExibeTel";
             this.labelExibeTel.Size = new System.Drawing.Size(48, 13);
             this.labelExibeTel.TabIndex = 25;
@@ -91,7 +99,7 @@
             // 
             this.labelExibeGenero.AutoSize = true;
             this.labelExibeGenero.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelExibeGenero.Location = new System.Drawing.Point(102, 224);
+            this.labelExibeGenero.Location = new System.Drawing.Point(102, 266);
             this.labelExibeGenero.Name = "labelExibeGenero";
             this.labelExibeGenero.Size = new System.Drawing.Size(68, 13);
             this.labelExibeGenero.TabIndex = 24;
@@ -101,7 +109,7 @@
             // 
             this.labelExibeCpf.AutoSize = true;
             this.labelExibeCpf.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelExibeCpf.Location = new System.Drawing.Point(247, 171);
+            this.labelExibeCpf.Location = new System.Drawing.Point(247, 213);
             this.labelExibeCpf.Name = "labelExibeCpf";
             this.labelExibeCpf.Size = new System.Drawing.Size(49, 13);
             this.labelExibeCpf.TabIndex = 23;
@@ -111,7 +119,7 @@
             // 
             this.labelExibeNasc.AutoSize = true;
             this.labelExibeNasc.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelExibeNasc.Location = new System.Drawing.Point(102, 171);
+            this.labelExibeNasc.Location = new System.Drawing.Point(102, 213);
             this.labelExibeNasc.Name = "labelExibeNasc";
             this.labelExibeNasc.Size = new System.Drawing.Size(58, 13);
             this.labelExibeNasc.TabIndex = 22;
@@ -121,7 +129,7 @@
             // 
             this.labelExibeConta.AutoSize = true;
             this.labelExibeConta.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelExibeConta.Location = new System.Drawing.Point(247, 118);
+            this.labelExibeConta.Location = new System.Drawing.Point(247, 160);
             this.labelExibeConta.Name = "labelExibeConta";
             this.labelExibeConta.Size = new System.Drawing.Size(61, 13);
             this.labelExibeConta.TabIndex = 21;
@@ -131,7 +139,7 @@
             // 
             this.labelConta.AutoSize = true;
             this.labelConta.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelConta.Location = new System.Drawing.Point(206, 118);
+            this.labelConta.Location = new System.Drawing.Point(206, 160);
             this.labelConta.Name = "labelConta";
             this.labelConta.Size = new System.Drawing.Size(38, 13);
             this.labelConta.TabIndex = 20;
@@ -141,7 +149,7 @@
             // 
             this.labelExibeAgencia.AutoSize = true;
             this.labelExibeAgencia.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelExibeAgencia.Location = new System.Drawing.Point(102, 118);
+            this.labelExibeAgencia.Location = new System.Drawing.Point(102, 160);
             this.labelExibeAgencia.Name = "labelExibeAgencia";
             this.labelExibeAgencia.Size = new System.Drawing.Size(72, 13);
             this.labelExibeAgencia.TabIndex = 19;
@@ -151,7 +159,7 @@
             // 
             this.labelInformacoes.AutoSize = true;
             this.labelInformacoes.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelInformacoes.Location = new System.Drawing.Point(21, 70);
+            this.labelInformacoes.Location = new System.Drawing.Point(21, 112);
             this.labelInformacoes.Name = "labelInformacoes";
             this.labelInformacoes.Size = new System.Drawing.Size(147, 13);
             this.labelInformacoes.TabIndex = 18;
@@ -173,9 +181,9 @@
             this.buttonImprimir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.buttonImprimir.FlatAppearance.BorderSize = 0;
             this.buttonImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonImprimir.ForeColor = System.Drawing.Color.Black;
-            this.buttonImprimir.Location = new System.Drawing.Point(137, 316);
+            this.buttonImprimir.Location = new System.Drawing.Point(137, 338);
             this.buttonImprimir.Name = "buttonImprimir";
             this.buttonImprimir.Size = new System.Drawing.Size(75, 23);
             this.buttonImprimir.TabIndex = 15;
@@ -198,7 +206,7 @@
             // 
             this.labelTel.AutoSize = true;
             this.labelTel.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelTel.Location = new System.Drawing.Point(216, 224);
+            this.labelTel.Location = new System.Drawing.Point(216, 266);
             this.labelTel.Name = "labelTel";
             this.labelTel.Size = new System.Drawing.Size(28, 13);
             this.labelTel.TabIndex = 13;
@@ -208,7 +216,7 @@
             // 
             this.labelGenero.AutoSize = true;
             this.labelGenero.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelGenero.Location = new System.Drawing.Point(51, 224);
+            this.labelGenero.Location = new System.Drawing.Point(51, 266);
             this.labelGenero.Name = "labelGenero";
             this.labelGenero.Size = new System.Drawing.Size(45, 13);
             this.labelGenero.TabIndex = 11;
@@ -218,7 +226,7 @@
             // 
             this.labelNasc.AutoSize = true;
             this.labelNasc.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelNasc.Location = new System.Drawing.Point(21, 171);
+            this.labelNasc.Location = new System.Drawing.Point(21, 213);
             this.labelNasc.Name = "labelNasc";
             this.labelNasc.Size = new System.Drawing.Size(79, 13);
             this.labelNasc.TabIndex = 10;
@@ -228,7 +236,7 @@
             // 
             this.labelCpf.AutoSize = true;
             this.labelCpf.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelCpf.Location = new System.Drawing.Point(214, 171);
+            this.labelCpf.Location = new System.Drawing.Point(214, 213);
             this.labelCpf.Name = "labelCpf";
             this.labelCpf.Size = new System.Drawing.Size(30, 13);
             this.labelCpf.TabIndex = 9;
@@ -238,7 +246,7 @@
             // 
             this.labelAgencia.AutoSize = true;
             this.labelAgencia.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelAgencia.Location = new System.Drawing.Point(47, 118);
+            this.labelAgencia.Location = new System.Drawing.Point(47, 160);
             this.labelAgencia.Name = "labelAgencia";
             this.labelAgencia.Size = new System.Drawing.Size(49, 13);
             this.labelAgencia.TabIndex = 8;
@@ -265,23 +273,87 @@
             this.pictureBoxDinheiro.TabIndex = 9;
             this.pictureBoxDinheiro.TabStop = false;
             // 
-            // tableLayoutPanel1
+            // buttonDepósito
             // 
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 160);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(137, 195);
-            this.tableLayoutPanel1.TabIndex = 11;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            this.buttonDepósito.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonDepósito.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDepósito.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDepósito.Location = new System.Drawing.Point(0, 171);
+            this.buttonDepósito.Name = "buttonDepósito";
+            this.buttonDepósito.Size = new System.Drawing.Size(138, 36);
+            this.buttonDepósito.TabIndex = 11;
+            this.buttonDepósito.Text = "Depósito";
+            this.buttonDepósito.UseVisualStyleBackColor = false;
+            // 
+            // buttonSaque
+            // 
+            this.buttonSaque.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonSaque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSaque.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSaque.Location = new System.Drawing.Point(0, 212);
+            this.buttonSaque.Name = "buttonSaque";
+            this.buttonSaque.Size = new System.Drawing.Size(138, 36);
+            this.buttonSaque.TabIndex = 12;
+            this.buttonSaque.Text = "Saque";
+            this.buttonSaque.UseVisualStyleBackColor = false;
+            // 
+            // buttonTransferencia
+            // 
+            this.buttonTransferencia.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonTransferencia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTransferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTransferencia.Location = new System.Drawing.Point(0, 254);
+            this.buttonTransferencia.Name = "buttonTransferencia";
+            this.buttonTransferencia.Size = new System.Drawing.Size(138, 36);
+            this.buttonTransferencia.TabIndex = 13;
+            this.buttonTransferencia.Text = "Transferência";
+            this.buttonTransferencia.UseVisualStyleBackColor = false;
+            // 
+            // buttonPagamentos
+            // 
+            this.buttonPagamentos.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonPagamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPagamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPagamentos.Location = new System.Drawing.Point(0, 296);
+            this.buttonPagamentos.Name = "buttonPagamentos";
+            this.buttonPagamentos.Size = new System.Drawing.Size(138, 36);
+            this.buttonPagamentos.TabIndex = 14;
+            this.buttonPagamentos.Text = "Pagamentos";
+            this.buttonPagamentos.UseVisualStyleBackColor = false;
+            // 
+            // labelSaldo
+            // 
+            this.labelSaldo.AutoSize = true;
+            this.labelSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSaldo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelSaldo.Location = new System.Drawing.Point(119, 55);
+            this.labelSaldo.Name = "labelSaldo";
+            this.labelSaldo.Size = new System.Drawing.Size(53, 16);
+            this.labelSaldo.TabIndex = 26;
+            this.labelSaldo.Text = "Saldo:";
+            // 
+            // labelExibeSaldo
+            // 
+            this.labelExibeSaldo.AutoSize = true;
+            this.labelExibeSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExibeSaldo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelExibeSaldo.Location = new System.Drawing.Point(175, 55);
+            this.labelExibeSaldo.Name = "labelExibeSaldo";
+            this.labelExibeSaldo.Size = new System.Drawing.Size(88, 16);
+            this.labelExibeSaldo.TabIndex = 27;
+            this.labelExibeSaldo.Text = "ExibeSaldo";
+            // 
+            // buttonExtrato
+            // 
+            this.buttonExtrato.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonExtrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExtrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExtrato.Location = new System.Drawing.Point(0, 338);
+            this.buttonExtrato.Name = "buttonExtrato";
+            this.buttonExtrato.Size = new System.Drawing.Size(138, 36);
+            this.buttonExtrato.TabIndex = 15;
+            this.buttonExtrato.Text = "Extrato";
+            this.buttonExtrato.UseVisualStyleBackColor = false;
             // 
             // TelaUsuario
             // 
@@ -289,10 +361,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.ClientSize = new System.Drawing.Size(520, 405);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.buttonExtrato);
+            this.Controls.Add(this.buttonPagamentos);
+            this.Controls.Add(this.buttonTransferencia);
+            this.Controls.Add(this.buttonSaque);
+            this.Controls.Add(this.buttonDepósito);
             this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.pictureBoxDinheiro);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "TelaUsuario";
             this.Text = "TelaUsuario";
             this.panel1.ResumeLayout(false);
@@ -324,6 +401,12 @@
         private System.Windows.Forms.Label labelExibeTel;
         private System.Windows.Forms.Label labelExibeGenero;
         private System.Windows.Forms.Label labelExibeCpf;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label labelExibeSaldo;
+        private System.Windows.Forms.Label labelSaldo;
+        private System.Windows.Forms.Button buttonDepósito;
+        private System.Windows.Forms.Button buttonSaque;
+        private System.Windows.Forms.Button buttonTransferencia;
+        private System.Windows.Forms.Button buttonPagamentos;
+        private System.Windows.Forms.Button buttonExtrato;
     }
 }
