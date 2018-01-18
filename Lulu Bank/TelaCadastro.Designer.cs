@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.labelRepitaSenha = new System.Windows.Forms.Label();
+            this.textBoxConfirmaEmail = new System.Windows.Forms.TextBox();
+            this.labelSenha = new System.Windows.Forms.Label();
+            this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.labelNovoUsuario = new System.Windows.Forms.Label();
@@ -44,12 +50,6 @@
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.pictureBoxDinheiro = new System.Windows.Forms.PictureBox();
             this.labelTitle = new System.Windows.Forms.Label();
-            this.textBoxSenha = new System.Windows.Forms.TextBox();
-            this.labelSenha = new System.Windows.Forms.Label();
-            this.textBoxConfirmaEmail = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelEmail = new System.Windows.Forms.Label();
-            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +59,7 @@
             this.panel1.BackColor = System.Drawing.Color.Teal;
             this.panel1.Controls.Add(this.labelEmail);
             this.panel1.Controls.Add(this.textBoxEmail);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.labelRepitaSenha);
             this.panel1.Controls.Add(this.textBoxConfirmaEmail);
             this.panel1.Controls.Add(this.labelSenha);
             this.panel1.Controls.Add(this.textBoxSenha);
@@ -80,6 +80,57 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(496, 344);
             this.panel1.TabIndex = 0;
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelEmail.Location = new System.Drawing.Point(259, 187);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(38, 13);
+            this.labelEmail.TabIndex = 23;
+            this.labelEmail.Text = "E-mail:";
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Location = new System.Drawing.Point(310, 184);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(164, 20);
+            this.textBoxEmail.TabIndex = 22;
+            // 
+            // labelRepitaSenha
+            // 
+            this.labelRepitaSenha.AutoSize = true;
+            this.labelRepitaSenha.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelRepitaSenha.Location = new System.Drawing.Point(222, 241);
+            this.labelRepitaSenha.Name = "labelRepitaSenha";
+            this.labelRepitaSenha.Size = new System.Drawing.Size(82, 13);
+            this.labelRepitaSenha.TabIndex = 21;
+            this.labelRepitaSenha.Text = "Repita a senha:";
+            // 
+            // textBoxConfirmaEmail
+            // 
+            this.textBoxConfirmaEmail.Location = new System.Drawing.Point(310, 238);
+            this.textBoxConfirmaEmail.Name = "textBoxConfirmaEmail";
+            this.textBoxConfirmaEmail.Size = new System.Drawing.Size(94, 20);
+            this.textBoxConfirmaEmail.TabIndex = 20;
+            // 
+            // labelSenha
+            // 
+            this.labelSenha.AutoSize = true;
+            this.labelSenha.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelSenha.Location = new System.Drawing.Point(50, 241);
+            this.labelSenha.Name = "labelSenha";
+            this.labelSenha.Size = new System.Drawing.Size(41, 13);
+            this.labelSenha.TabIndex = 19;
+            this.labelSenha.Text = "Senha:";
+            // 
+            // textBoxSenha
+            // 
+            this.textBoxSenha.Location = new System.Drawing.Point(101, 238);
+            this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.Size = new System.Drawing.Size(94, 20);
+            this.textBoxSenha.TabIndex = 18;
             // 
             // buttonCancelar
             // 
@@ -167,7 +218,6 @@
             this.labelCpf.Size = new System.Drawing.Size(30, 13);
             this.labelCpf.TabIndex = 9;
             this.labelCpf.Text = "CPF:";
-            this.labelCpf.Click += new System.EventHandler(this.label2_Click);
             // 
             // labelNome
             // 
@@ -236,57 +286,6 @@
             this.labelTitle.TabIndex = 8;
             this.labelTitle.Text = "Lulu Bank";
             // 
-            // textBoxSenha
-            // 
-            this.textBoxSenha.Location = new System.Drawing.Point(101, 238);
-            this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.Size = new System.Drawing.Size(94, 20);
-            this.textBoxSenha.TabIndex = 18;
-            // 
-            // labelSenha
-            // 
-            this.labelSenha.AutoSize = true;
-            this.labelSenha.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelSenha.Location = new System.Drawing.Point(50, 241);
-            this.labelSenha.Name = "labelSenha";
-            this.labelSenha.Size = new System.Drawing.Size(41, 13);
-            this.labelSenha.TabIndex = 19;
-            this.labelSenha.Text = "Senha:";
-            // 
-            // textBoxConfirmaEmail
-            // 
-            this.textBoxConfirmaEmail.Location = new System.Drawing.Point(310, 238);
-            this.textBoxConfirmaEmail.Name = "textBoxConfirmaEmail";
-            this.textBoxConfirmaEmail.Size = new System.Drawing.Size(94, 20);
-            this.textBoxConfirmaEmail.TabIndex = 20;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(222, 241);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Repita a senha:";
-            // 
-            // labelEmail
-            // 
-            this.labelEmail.AutoSize = true;
-            this.labelEmail.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelEmail.Location = new System.Drawing.Point(259, 187);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(38, 13);
-            this.labelEmail.TabIndex = 23;
-            this.labelEmail.Text = "E-mail:";
-            // 
-            // textBoxEmail
-            // 
-            this.textBoxEmail.Location = new System.Drawing.Point(310, 184);
-            this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(164, 20);
-            this.textBoxEmail.TabIndex = 22;
-            // 
             // TelaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -327,7 +326,7 @@
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelRepitaSenha;
         private System.Windows.Forms.TextBox textBoxConfirmaEmail;
         private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.TextBox textBoxSenha;

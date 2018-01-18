@@ -34,7 +34,7 @@
             this.labelSenha = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelBemVindo = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.linkLabelCadastreSe = new System.Windows.Forms.LinkLabel();
@@ -98,7 +98,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Teal;
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.labelBemVindo);
             this.panel1.Controls.Add(this.textBoxUsuario);
             this.panel1.Controls.Add(this.buttonLogin);
             this.panel1.Controls.Add(this.labelCpf);
@@ -110,16 +110,16 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label1
+            // labelBemVindo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(85, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 17);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Bem vindo(a)";
+            this.labelBemVindo.AutoSize = true;
+            this.labelBemVindo.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBemVindo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelBemVindo.Location = new System.Drawing.Point(85, 9);
+            this.labelBemVindo.Name = "labelBemVindo";
+            this.labelBemVindo.Size = new System.Drawing.Size(82, 17);
+            this.labelBemVindo.TabIndex = 8;
+            this.labelBemVindo.Text = "Bem vindo(a)";
             // 
             // labelTitle
             // 
@@ -173,7 +173,6 @@
             this.pictureBoxDinheiro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDinheiro.TabIndex = 6;
             this.pictureBoxDinheiro.TabStop = false;
-            this.pictureBoxDinheiro.Click += new System.EventHandler(this.pictureBoxDinheiro_Click);
             // 
             // TelaLogin
             // 
@@ -206,7 +205,7 @@
         public System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBoxDinheiro;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelBemVindo;
         private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.LinkLabel linkLabelCadastreSe;

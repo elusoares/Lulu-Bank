@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelExibeSaldo = new System.Windows.Forms.Label();
+            this.labelSaldo = new System.Windows.Forms.Label();
             this.labelExibeTel = new System.Windows.Forms.Label();
             this.labelExibeGenero = new System.Windows.Forms.Label();
             this.labelExibeCpf = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@
             this.buttonSaque = new System.Windows.Forms.Button();
             this.buttonTransferencia = new System.Windows.Forms.Button();
             this.buttonPagamentos = new System.Windows.Forms.Button();
-            this.labelSaldo = new System.Windows.Forms.Label();
-            this.labelExibeSaldo = new System.Windows.Forms.Label();
             this.buttonExtrato = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDinheiro)).BeginInit();
@@ -83,7 +83,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(381, 405);
             this.panel1.TabIndex = 1;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // labelExibeSaldo
+            // 
+            this.labelExibeSaldo.AutoSize = true;
+            this.labelExibeSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelExibeSaldo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelExibeSaldo.Location = new System.Drawing.Point(175, 55);
+            this.labelExibeSaldo.Name = "labelExibeSaldo";
+            this.labelExibeSaldo.Size = new System.Drawing.Size(88, 16);
+            this.labelExibeSaldo.TabIndex = 27;
+            this.labelExibeSaldo.Text = "ExibeSaldo";
+            // 
+            // labelSaldo
+            // 
+            this.labelSaldo.AutoSize = true;
+            this.labelSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSaldo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelSaldo.Location = new System.Drawing.Point(119, 55);
+            this.labelSaldo.Name = "labelSaldo";
+            this.labelSaldo.Size = new System.Drawing.Size(53, 16);
+            this.labelSaldo.TabIndex = 26;
+            this.labelSaldo.Text = "Saldo:";
             // 
             // labelExibeTel
             // 
@@ -200,7 +221,6 @@
             this.labelBoasVindas.Size = new System.Drawing.Size(115, 18);
             this.labelBoasVindas.TabIndex = 14;
             this.labelBoasVindas.Text = "Bem Vindo(a),";
-            this.labelBoasVindas.Click += new System.EventHandler(this.labelBoasVindas_Click);
             // 
             // labelTel
             // 
@@ -320,28 +340,6 @@
             this.buttonPagamentos.TabIndex = 14;
             this.buttonPagamentos.Text = "Pagamentos";
             this.buttonPagamentos.UseVisualStyleBackColor = false;
-            // 
-            // labelSaldo
-            // 
-            this.labelSaldo.AutoSize = true;
-            this.labelSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSaldo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelSaldo.Location = new System.Drawing.Point(119, 55);
-            this.labelSaldo.Name = "labelSaldo";
-            this.labelSaldo.Size = new System.Drawing.Size(53, 16);
-            this.labelSaldo.TabIndex = 26;
-            this.labelSaldo.Text = "Saldo:";
-            // 
-            // labelExibeSaldo
-            // 
-            this.labelExibeSaldo.AutoSize = true;
-            this.labelExibeSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelExibeSaldo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelExibeSaldo.Location = new System.Drawing.Point(175, 55);
-            this.labelExibeSaldo.Name = "labelExibeSaldo";
-            this.labelExibeSaldo.Size = new System.Drawing.Size(88, 16);
-            this.labelExibeSaldo.TabIndex = 27;
-            this.labelExibeSaldo.Text = "ExibeSaldo";
             // 
             // buttonExtrato
             // 
